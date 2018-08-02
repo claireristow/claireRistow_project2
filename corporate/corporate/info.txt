@@ -1,0 +1,4 @@
+Fonts
+Montserrat (Google Fonts)
+Open Sans (Google Fonts)
+Font Awesome (https://fontawesome.com/)

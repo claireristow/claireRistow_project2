@@ -1,0 +1,27 @@
+@import "partials/_setup.scss";
+@import "partials/_utils.scss";
+@import "partials/_typography.scss";
+@import "partials/_header.scss";
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
