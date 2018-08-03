@@ -31,7 +31,7 @@ a {
 .button {
     background-color: $secondary;
     border: none;
-    border-radius: 5%;
+    border-radius: 1.5rem;
     margin: 3rem 0;
     &__link {
         color: #fff;
@@ -135,4 +135,45 @@ header {
 
 .right {
     width: 50%;
+}
+
+// SERVICES 1
+
+.services {
+    padding: 10rem 0;
+    h2 {
+        text-align: center;
+    }
+}
+
+.cards {
+    display: flex;
+}
+
+.service {
+    width: calc(100% / 3 - 2%);
+    margin: 0 1%;
+    padding: 4rem;
+    border: 0.1rem solid $primary;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+        background: $primary;
+    }
+    &__icon {
+        font-size: 8rem;
+        padding-bottom: 4rem;
+    }
+    &__description {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    &__pros {
+        list-style-type: none;
+        list-style-image: '/f00c';
+        // font-family: "Font Awesome 5 Free";
+    }
+    &__pros:before
 }

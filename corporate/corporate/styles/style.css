@@ -209,7 +209,7 @@ a {
 .button {
   background-color: #0e5f88;
   border: none;
-  border-radius: 5%;
+  border-radius: 1.5rem;
   margin: 3rem 0; }
   .button__link {
     color: #fff;
@@ -326,3 +326,41 @@ header {
 
 .right {
   width: 50%; }
+
+.services {
+  padding: 10rem 0; }
+  .services h2 {
+    text-align: center; }
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.service {
+  width: calc(100% / 3 - 2%);
+  margin: 0 1%;
+  padding: 4rem;
+  border: 0.1rem solid #8ecceb;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .service:hover {
+    background: #8ecceb; }
+  .service__icon {
+    font-size: 8rem;
+    padding-bottom: 4rem; }
+  .service__description {
+    text-align: center;
+    padding: 1rem 0; }
+  .service__pros {
+    list-style-type: none;
+    list-style-image: '/f00c'; }
