@@ -1,8 +1,8 @@
 @import "partials/_setup.scss";
 @import "partials/_utils.scss";
 @import "partials/_typography.scss";
-@import "partials/_header.scss";
-@import "partials/_footer.scss";
+
+// Global styles
 
 html {
     font-size: 62.5%;
@@ -10,19 +10,129 @@ html {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
+    color: $dark;
 }
 
 .wrapper {
-    width: 120rem;
+    max-width: 115rem;
     margin: 0 auto;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+}
+
+.button {
+    background-color: $secondary;
+    border: none;
+    border-radius: 5%;
+    margin: 3rem 0;
+    &__link {
+        color: #fff;
+        font-size: 2.4rem;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding:1rem 3rem;
+        display: block;
+    }
+}
+
+.blue {
+    color: $secondary;
+}
+
+// End of gloabl styles
+
+// HEADER
+
+header {
+    background-image: url(../assets/image-1.jpeg);
+    background-attachment: fixed;
+    height: 120vh;
+    background-size: cover;
+}
+
+.navBar {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        flex: 1 0 10rem;
+        padding-bottom: 0;
+    }
+    &__list {
+        flex: 1 1 5rem;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        color: $dark;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.flexWelcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+// INTRO
+
+.intro {
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+// WHY CHOOSE US
+
+.whyUs {
+    background: $light;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    padding: 10rem;
+    width: 50%;
+}
+
+.persuasive {
+    display: flex;
+    align-items: center;
+    &__image {
+        width: 20%;
+        height: 8rem;
+        margin-right: 5%;
+        object-fit: cover;
+    }
+    &__figcaption {
+        width: 75%;
+    }
+}
+
+.persuasive--padding {
+    padding-bottom: 3rem;
+}
+
+.right {
+    width: 50%;
 }
