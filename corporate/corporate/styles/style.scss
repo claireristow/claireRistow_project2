@@ -172,8 +172,108 @@ header {
     }
     &__pros {
         list-style-type: none;
-        list-style-image: '/f00c';
-        // font-family: "Font Awesome 5 Free";
+        margin: 0;
+        padding: 2rem 0 0 0;
     }
-    &__pros:before
+    &__item {
+        position: relative;
+    }
+    &__item::before {
+        content: '\f00c';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        position: absolute;
+        top: 10%;
+        left: -25%;
+    }
+}
+
+// TESTIMONIALS
+
+.testimonials .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.testimonials {
+    background: $dark;
+    color: #fff;
+    padding: 10rem 0;
+    &__image {
+        margin-bottom: 3rem;
+        position: relative;
+    }
+    &__image::before {
+        content: '\f104';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        position: absolute;
+        color: #fff;
+    }
+    &__image::after {
+        content: '\f105';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        position: absolute;
+        color: #fff;
+    }
+    &__comment {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    &__name {
+        font-size: 2.6rem;
+        font-style: italic;
+        // font-weight: 200;
+    }
+}
+
+// GALLERY
+
+.gallery {
+    color: #fff;
+    display: flex;
+    &__bleed {
+        width: 25%;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    &__bleed1 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/image-6.jpeg);
+    }
+    &__bleed2 {
+        background:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/image-7.jpeg);
+    }
+    &__bleed3 {
+        background:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/image-8.jpeg);
+    }
+    &__bleed4 {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/image-9.jpeg);
+    }
+    &__item {
+        width: 80%;
+        height: 20rem;
+        padding: 4rem 2rem;
+        border: 0.1rem solid #fff;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    &__description {
+        text-align: center;
+    }
+    &__bleed:hover .gallery__item {
+        display: block;
+    }
+}
+
+.services2 {
+    padding: 10rem 0;
 }

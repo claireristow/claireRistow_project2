@@ -363,4 +363,115 @@ header {
     padding: 1rem 0; }
   .service__pros {
     list-style-type: none;
-    list-style-image: '/f00c'; }
+    margin: 0;
+    padding: 2rem 0 0 0; }
+  .service__item {
+    position: relative; }
+  .service__item::before {
+    content: '\f00c';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    position: absolute;
+    top: 10%;
+    left: -25%; }
+
+.testimonials .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.testimonials {
+  background: #1d1d1d;
+  color: #fff;
+  padding: 10rem 0; }
+  .testimonials__image {
+    margin-bottom: 3rem;
+    position: relative; }
+  .testimonials__image::before {
+    content: '\f104';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    position: absolute;
+    color: #fff; }
+  .testimonials__image::after {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    position: absolute;
+    color: #fff; }
+  .testimonials__comment {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    text-align: center;
+    padding-bottom: 3rem; }
+  .testimonials__name {
+    font-size: 2.6rem;
+    font-style: italic; }
+
+.gallery {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .gallery__bleed {
+    width: 25%;
+    height: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+  .gallery__bleed1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../assets/image-6.jpeg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-6.jpeg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-6.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-6.jpeg); }
+  .gallery__bleed2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../assets/image-7.jpeg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-7.jpeg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-7.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-7.jpeg); }
+  .gallery__bleed3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../assets/image-8.jpeg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-8.jpeg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-8.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-8.jpeg); }
+  .gallery__bleed4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../assets/image-9.jpeg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-9.jpeg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-9.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/image-9.jpeg); }
+  .gallery__item {
+    width: 80%;
+    height: 20rem;
+    padding: 4rem 2rem;
+    border: 0.1rem solid #fff;
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: none; }
+  .gallery__description {
+    text-align: center; }
+  .gallery__bleed:hover .gallery__item {
+    display: block; }
+
+.services2 {
+  padding: 10rem 0; }
