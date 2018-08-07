@@ -72,7 +72,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     &__logo {
-        flex: 1 0 10rem;
+        flex: 1 0 2rem;
         padding-bottom: 0;
     }
     &__list {
@@ -94,11 +94,17 @@ header {
     &__link--smallWhite {
         color: #fff;
         font-size: 1.6rem;
+        padding: 0 2rem;
+    }
+    &__rights {
+        padding-top: 3rem;
+        font-size: 1.6rem;
     }
 }
 
 .navBar--flex {
     flex-direction: column;
+    align-items: center;
 }
 
 .flexWelcome {
@@ -256,9 +262,6 @@ header {
     &__item {
         width: 25%;
         height: 25rem;
-        display: flex;
-        justify-content: center;
-        align-content: center;
     }
     &__item1 {
         background: url(../assets/image-6.jpeg);
@@ -301,7 +304,7 @@ header {
     }
 }
 
-// Services 2 section
+// SERVICES 2
 
 .services2 {
     padding: 10rem 0;
@@ -352,18 +355,19 @@ header {
         background: transparent;
         padding: 1rem;
         width: 60%;
-    }
-    &__message::placeholder {
         color: $dark;
         text-transform: uppercase;
         font-weight: 700;
+    }
+    &__message::placeholder {
         text-align: center;
     }
     &__message::-moz-placeholder {
         opacity: 1;
     }
     &__message:focus {
-        border: 0.2rem solid $dark;
+        font-weight: 400;
+        color: dimgray;
     }
     &__send {
         background: $dark;
@@ -392,23 +396,34 @@ header {
 
 .bios {
     display: flex;
-    justify-content: center;
-    align-items: center;
     &__container {
         width: calc(100% / 3 - 4rem);
+        height: 35rem;
         margin: 0 2rem;
-        padding: 12rem 5rem;
-        text-align: center;
-        color: #fff;
     }
     &__container1 {
-        background: url(../assets/image-12.jpeg)
+        background: url(../assets/image-12.jpeg);
+        background-size: cover;
     }
     &__container2 {
-        background: url(../assets/image-13.jpeg)
+        background: url(../assets/image-13.jpeg);
+        background-size: cover;
     }
     &__container3 {
-        background: url(../assets/image-14.jpeg)
+        background: url(../assets/image-14.jpeg);
+        background-size: cover;
+    }
+    &__hover {
+        background: rgba(0,0,0,0.7);
+        height: 35rem;
+        color: #fff;
+        display: none;
+    }
+    &__container:hover .bios__hover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -420,7 +435,7 @@ footer {
 }
 
 .topFooter {
-    padding-top: 10rem;
+    padding: 10rem 0 5rem 0;
     &__sections {
         margin: 0;
         padding: 0;
@@ -439,6 +454,45 @@ footer {
     }
     &__contactItem {
         padding-bottom: 2rem;
+        position: relative;
+    }
+    &__email::before {
+        content: '\f0e0';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        padding-right: 0.5rem;
+    }
+    &__phone::before {
+        content: '\f095';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        padding-right: 0.5rem;
+    }
+    &__address::before {
+        content:'\f3c5';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        padding-right: 0.5rem;
+    }
+    &__emailInput {
+        background: transparent;
+        border: 0.1rem solid #fff;
+        padding: 0.5rem;
+        color: #fff;
+        text-transform: lowercase;
+    }
+    &__emailInput::-moz-placeholder {
+        opacity: 1;
+    }
+    &__emailInput::after {
+        content: '\f1d8';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+    }
+    // FIX EMAIL ICON - NOT WORKING 
+    &__emailInput:focus {
+        color: $primary;
+        border: 0.1rem solid $primary;
     }
     &__about {
         line-height: 2.6rem;
@@ -451,4 +505,8 @@ footer {
         width: calc(25% - 1rem);
         margin: 0.5rem;
     }
+}
+
+.navBar--flex {
+    border-top: 0.1rem solid $light;
 }
