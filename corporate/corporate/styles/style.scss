@@ -62,6 +62,7 @@ header {
 .navBar {
     padding: 2rem 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     &__logo {
         flex: 1 0 10rem;
@@ -83,6 +84,14 @@ header {
         font-weight: 700;
         text-transform: uppercase;
     }
+    &__link--smallWhite {
+        color: #fff;
+        font-size: 1.6rem;
+    }
+}
+
+.navBar--flex {
+    flex-direction: column;
 }
 
 .flexWelcome {
@@ -328,3 +337,65 @@ header {
     }
 }
 
+// TEAM
+
+.team {
+    padding: 10rem 0;
+    background: $light;
+    h2 {
+        text-align: center;
+    }
+}
+
+.bios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container {
+        width: calc(100% / 3 - 4rem);
+        margin: 0 2rem;
+        padding: 12rem 5rem;
+        text-align: center;
+        color: #fff;
+    }
+    &__container1 {
+        background: url(../assets/image-12.jpeg)
+    }
+    &__container2 {
+        background: url(../assets/image-13.jpeg)
+    }
+    &__container3 {
+        background: url(../assets/image-14.jpeg)
+    }
+}
+
+// FOOTER
+
+footer {
+    background: $dark;
+    color: #fff;
+}
+
+.topFooter {
+    padding-top: 10rem;
+    &__sections {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+    &__item {
+        padding: 0;
+        width: calc(100% / 3 - 4rem);
+        margin: 0 2rem;
+    }
+    &__heading {
+        padding-bottom: 3rem;
+    }
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(25% - 2rem);
+        margin: 1rem;
+    }
+}

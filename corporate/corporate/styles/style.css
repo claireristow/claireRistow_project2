@@ -234,6 +234,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
@@ -264,6 +268,15 @@ header {
     font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase; }
+  .navBar__link--smallWhite {
+    color: #fff;
+    font-size: 1.6rem; }
+
+.navBar--flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .flexWelcome {
   display: -webkit-box;
@@ -524,3 +537,60 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     text-align: center; }
+
+.team {
+  padding: 10rem 0;
+  background: #f1f3f3; }
+  .team h2 {
+    text-align: center; }
+
+.bios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .bios__container {
+    width: calc(100% / 3 - 4rem);
+    margin: 0 2rem;
+    padding: 12rem 5rem;
+    text-align: center;
+    color: #fff; }
+  .bios__container1 {
+    background: url(../assets/image-12.jpeg); }
+  .bios__container2 {
+    background: url(../assets/image-13.jpeg); }
+  .bios__container3 {
+    background: url(../assets/image-14.jpeg); }
+
+footer {
+  background: #1d1d1d;
+  color: #fff; }
+
+.topFooter {
+  padding-top: 10rem; }
+  .topFooter__sections {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .topFooter__item {
+    padding: 0;
+    width: calc(100% / 3 - 4rem);
+    margin: 0 2rem; }
+  .topFooter__heading {
+    padding-bottom: 3rem; }
+  .topFooter__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: calc(25% - 2rem);
+    margin: 1rem; }
