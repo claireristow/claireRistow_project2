@@ -114,7 +114,9 @@
         <section class="testimonials">
             <div class="wrapper">
                 <h2 class="testimonials__heading">People say about us</h2>
-                <img src="assets/image-5.jpeg" alt="Headshot of Lewis" class="testimonials__image">
+                <div class="testimonials__imageContainer">
+                    <img src="assets/image-5.jpeg" alt="Headshot of Lewis" class="testimonials__image">
+                </div>
                 <p class="testimonials__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et nemo dicta omnis placeat error ducimus, enim quas vel quibusdam veniam ut ratione, sit molestiae odio quae ad suscipit sapiente perspiciatis quos deserunt nesciunt magni dolorem? Vero odio ab similique.</p>
                 <p class="testimonials__name">Lewis</p>
             </div>
@@ -159,7 +161,7 @@
             <h2>Services</h2>
             <div class="offer">
                 <div class="offer__item">
-                    <h3 class="offer__header">Design</h3>
+                    <h3 class="offer__header offer__header1">Design</h3>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur necessitatibus nihil, enim ut hic vero quos nesciunt laboriosam harum!</p>
                     <button class="offer__button button">
                         <a href="#" class="offer__link button__link">More</a>
@@ -168,7 +170,7 @@
                 <img src="assets/image-10.jpeg" alt="" class="offer__image">
                 <img src="assets/image-11.jpeg" alt="" class="offer__image">
                 <div class="offer__item">
-                    <h3 class="offer__header">Analytics</h3>
+                    <h3 class="offer__header offer__header2">Analytics</h3>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur necessitatibus nihil, enim ut hic vero quos nesciunt laboriosam harum!</p>
                     <button class="offer__button button">
                         <a href="#" class="offer__link button__link">More</a>
@@ -219,13 +221,15 @@
     <footer class="topFooter">
         <div class="wrapper">
             <ul class="topFooter__sections">
-                <li class="topFooter__item">
+                <li class="topFooter__item topFooter__item1">
                     <h5 class="topFooter__heading">Contact</h5>
                     <p class="topFooter__contactItem topFooter__email">infohackeryou.com</p>
                     <p class="topFooter__contactItem topFooter__phone">123-456-7890</p>
                     <p class="topFooter__contactItem topFooter__address">Toronto, Ontario</p>
-                    <label for="email" class="visuallyhidden topFooter__hiddenLabel">Email</label>
-                    <input type="email" id="email" placeholder="Email Address" class="topFooter__emailInput">
+                    <div class="topFooter__inputContainer">
+                        <label for="email" class="visuallyhidden topFooter__hiddenLabel">Email</label>
+                        <input type="email" id="email" placeholder="Email Address" class="topFooter__emailInput">
+                    </div>
                 </li>
                 <li class="topFooter__item topFooter__item--margin">
                     <h5 class="topFooter__heading">About Us</h5>

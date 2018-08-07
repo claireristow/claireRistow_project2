@@ -30,11 +30,11 @@ a {
 
 .button {
     background-color: $secondary;
-    border: 0.2rem solid $secondary;
+    border: none;
     border-radius: 1.5rem;
     margin: 3rem 0;
     &:hover {
-        background-color: $primary;
+        background-color: rgba(14, 95, 136, 0.7);
     }
     &__link {
         color: #fff;
@@ -44,10 +44,6 @@ a {
         font-weight: 700;
         padding:1rem 3rem;
         display: block;
-    }
-    &__link:hover {
-        color: $secondary;
-        // color not working - to troubleshoot
     }
 }
 
@@ -91,10 +87,16 @@ header {
         font-weight: 700;
         text-transform: uppercase;
     }
+    &__link:hover {
+        border-bottom: 0.4rem solid $dark;
+    }
     &__link--smallWhite {
         color: #fff;
         font-size: 1.6rem;
-        padding: 0 2rem;
+        margin: 0 2rem;
+    }
+    &__link--smallWhite:hover {
+        border-bottom: 0.2rem solid #fff;
     }
     &__rights {
         padding-top: 3rem;
@@ -221,25 +223,33 @@ header {
 
 .testimonials {
     background: $dark;
-    color: #fff;
+    color: $light;
     padding: 10rem 0;
-    &__image {
+    &__imageContainer {
         margin-bottom: 3rem;
         position: relative;
     }
-    &__image::before {
+    &__imageContainer::before {
         content: '\f104';
         font-family: 'Font Awesome 5 Free';
         font-weight: 700;
+        font-size: 3.6rem;
+        color: $light;
         position: absolute;
-        color: #fff;
+        top: 50%;
+        left: -40%;
+        transform: translateY(-50%);
     }
-    &__image::after {
+    &__imageContainer::after {
         content: '\f105';
         font-family: 'Font Awesome 5 Free';
         font-weight: 700;
+        font-size: 3.6rem;
+        color: $light;
         position: absolute;
-        color: #fff;
+        top: 50%;
+        right: -40%;
+        transform: translateY(-50%);
     }
     &__comment {
         font-size: 2.6rem;
@@ -250,7 +260,6 @@ header {
     &__name {
         font-size: 2.6rem;
         font-style: italic;
-        // font-weight: 200;
     }
 }
 
@@ -328,6 +337,23 @@ header {
     }
     &__header {
         padding-bottom: 3rem;
+        position: relative;
+    }
+    &__header1::before {
+        content: '1.';
+        position: absolute;
+        top: -90%;
+        left: -80%;
+        color: #e5e3e3;
+        font-size: 13.4rem;
+    }
+    &__header2::before {
+        content: '2.';
+        position: absolute;
+        top: -90%;
+        left: -50%;
+        color: #e5e3e3;
+        font-size: 13.4rem;
     }
     &__button {
         margin-top: 4rem;
@@ -381,6 +407,9 @@ header {
         font-weight: 700;
         padding: 1rem 4rem;
         display: block;
+    }
+    &__send:hover {
+        background: rgba(0,0,0,0.7);
     }
 }
 
@@ -454,7 +483,6 @@ footer {
     }
     &__contactItem {
         padding-bottom: 2rem;
-        position: relative;
     }
     &__email::before {
         content: '\f0e0';
@@ -475,21 +503,31 @@ footer {
         padding-right: 0.5rem;
     }
     &__emailInput {
+        width: 70%;
+        margin-top: 1.5rem;
         background: transparent;
         border: 0.1rem solid #fff;
         padding: 0.5rem;
         color: #fff;
+        font-size: 1.2rem;
         text-transform: lowercase;
+    }
+    &__inputContainer {
+        position: relative;
+    }
+    &__inputContainer::after {
+        content: '\f1d8';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: $light;
+        position: absolute;
+        bottom: 15%;
+        right: 33%;
     }
     &__emailInput::-moz-placeholder {
         opacity: 1;
     }
-    &__emailInput::after {
-        content: '\f1d8';
-        font-family: "Font Awesome 5 Free";
-        font-weight: 700;
-    }
-    // FIX EMAIL ICON - NOT WORKING 
     &__emailInput:focus {
         color: $primary;
         border: 0.1rem solid $primary;
