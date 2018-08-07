@@ -121,28 +121,36 @@
         </section>
 
         <section class="gallery">
-            <figure class="gallery__bleed gallery__bleed1">
-                <div class="gallery__item">
-                    <h3 class="gallery__header">Project #4</h3>
-                    <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <figure class="gallery__item gallery__item1">
+                <div class="gallery__hover">
+                    <div class="gallery__border">
+                        <h3 class="gallery__header">Project #4</h3>
+                        <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
             </figure>
-            <figure class="gallery__bleed gallery__bleed2">
-                <div class="gallery__item">
-                    <h3 class="gallery__header">Project #1</h3>
-                    <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <figure class="gallery__item gallery__item2">
+                <div class="gallery__hover">
+                    <div class="gallery__border">
+                        <h3 class="gallery__header">Project #1</h3>
+                        <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
             </figure>
-            <figure class="gallery__bleed gallery__bleed3">
-                <div class="gallery__item">
-                    <h3 class="gallery__header">Project #2</h3>
-                    <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <figure class="gallery__item gallery__item3">
+                <div class="gallery__hover">
+                    <div class="gallery__border">
+                        <h3 class="gallery__header">Project #2</h3>
+                        <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
             </figure>
-            <figure class="gallery__bleed gallery__bleed4">
-                <div class="gallery__item">
-                    <h3 class="gallery__header">Project #3</h3>
-                    <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <figure class="gallery__item gallery__item4">
+                <div class="gallery__hover">
+                    <div class="gallery__border">
+                        <h3 class="gallery__header">Project #3</h3>
+                        <p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
             </figure>
         </section>
@@ -171,10 +179,12 @@
 
         <section class="question">
             <div class="wrapper">
-                <h2 class="question__heading">Ask a question</h2>
-                <label for="message" class="visuallyhidden" class="question__hiddenLabel">Message</label>
-                <input type="text" id="message" placeholder="Your Message" class="question__message">
-                <input type="submit" id="send" class="question__send" placeholder="Send">
+                <div class="question__flex">
+                    <h2 class="question__heading">Ask a question</h2>
+                    <label for="message" class="visuallyhidden" class="question__hiddenLabel">Message</label>
+                    <input type="text" id="message" placeholder="Your Message" class="question__message">
+                    <input type="submit" id="send" class="question__send" value="Send">
+                </div>
             </div>
         </section>
 
@@ -201,37 +211,39 @@
     </main>
 
     <footer class="topFooter">
-        <ul class="wrapper topFooter__sections">
-            <li class="topFooter__item">
-                <h5 class="topFooter__heading">Contact</h5>
-                <p class="topFooter__email">infohackeryou.com</p>
-                <p class="topFooter__phone">123-456-7890</p>
-                <p class="topFooter__address">Toronto, Ontario</p>
-                <label for="email" class="visuallyhidden topFooter__hiddenLabel">Email</label>
-                <input type="email" id="email" placeholder="Email Address" class="topFooter__emailInput">
-            </li>
-            <li class="topFooter__item">
-                <h5 class="topFooter__heading">About Us</h5>
-                <p class="topFooter__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit dignissimos ab velit dolore! Nihil beatae delectus vitae voluptatem, dolor iusto alias minima quia eligendi praesentium repellat sunt deserunt in recusandae quis saepe sit, ullam tempore! Provident repellat amet laborum nesciunt?</p>
-            </li>
-            <li class="topFooter__item">
-                <h5 class="topFooter__heading">Instagram</h5>
-                <div class="topFooter__gallery">
-                    <img src="assets/images-15.jpeg" alt="" class="topFooter__galleryItem">
-                    <img src="assets/images-16.jpeg" alt="" class="topFooter__galleryItem">
-                    <img src="assets/images-17.jpeg" alt="" class="topFooter__galleryItem">
-                    <img src="assets/images-18.jpeg" alt="" class="topFooter__galleryItem">
-                    <img src="assets/images-19.jpeg" alt="" class="topFooter__galleryItem">
-                    <img src="assets/images-20.jpeg" alt="" class="topFooter__galleryItem">
-                    <img src="assets/images-21.jpeg" alt="" class="topFooter__galleryItem">
-                    <img src="assets/images-22.jpeg" alt="" class="topFooter__galleryItem">
-                </div>
-            </li>
-        </ul>
+        <div class="wrapper">
+            <ul class="topFooter__sections">
+                <li class="topFooter__item">
+                    <h5 class="topFooter__heading">Contact</h5>
+                    <p class="topFooter__contactItem topFooter__email">infohackeryou.com</p>
+                    <p class="topFooter__contactItem topFooter__phone">123-456-7890</p>
+                    <p class="topFooter__contactItem topFooter__address">Toronto, Ontario</p>
+                    <label for="email" class="visuallyhidden topFooter__hiddenLabel">Email</label>
+                    <input type="email" id="email" placeholder="Email Address" class="topFooter__contactItem topFooter__emailInput">
+                </li>
+                <li class="topFooter__item topFooter__item--margin">
+                    <h5 class="topFooter__heading">About Us</h5>
+                    <p class="topFooter__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit dignissimos ab velit dolore! Nihil beatae delectus vitae voluptatem, dolor iusto alias minima quia eligendi praesentium repellat sunt deserunt in recusandae quis saepe sit, ullam tempore! Provident repellat amet laborum nesciunt?</p>
+                </li>
+                <li class="topFooter__item">
+                    <h5 class="topFooter__heading">Instagram</h5>
+                    <div class="topFooter__gallery">
+                        <img src="assets/image-15.jpeg" alt="" class="topFooter__galleryItem">
+                        <img src="assets/image-16.jpeg" alt="" class="topFooter__galleryItem">
+                        <img src="assets/image-17.jpeg" alt="" class="topFooter__galleryItem">
+                        <img src="assets/image-18.jpeg" alt="" class="topFooter__galleryItem">
+                        <img src="assets/image-19.jpeg" alt="" class="topFooter__galleryItem">
+                        <img src="assets/image-20.jpeg" alt="" class="topFooter__galleryItem">
+                        <img src="assets/image-21.jpeg" alt="" class="topFooter__galleryItem">
+                        <img src="assets/image-22.jpeg" alt="" class="topFooter__galleryItem">
+                    </div>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <footer>
-        <div class="wrapper navBar">
+        <div class="wrapper navBar navBar--flex">
             <h3 class="navBar__logo">Corporate</h3>
             <ul class="navBar__list">
                 <li class="navBar__item">
