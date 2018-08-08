@@ -1,0 +1,130 @@
+footer {
+    background: $dark;
+    color: #fff;
+}
+
+.topFooter {
+    padding: 10rem 0 5rem 0;
+    &__sections {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+    &__item {
+        padding: 0;
+        width: calc(100% / 3);
+    }
+    &__item--margin {
+        margin: 0 4rem;
+    }
+    &__heading {
+        padding-bottom: 3rem;
+    }
+    &__contactItem {
+        padding-bottom: 2rem;
+    }
+    &__email::before {
+        content: '\f0e0';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        padding-right: 0.5rem;
+    }
+    &__phone::before {
+        content: '\f095';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        padding-right: 0.5rem;
+    }
+    &__address::before {
+        content:'\f3c5';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        padding-right: 0.5rem;
+    }
+    &__emailInput {
+        width: 70%;
+        margin-top: 1.5rem;
+        background: transparent;
+        border: 0.1rem solid #fff;
+        padding: 0.5rem;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: lowercase;
+    }
+    &__inputContainer {
+        position: relative;
+    }
+    &__inputContainer::after {
+        content: '\f1d8';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: $light;
+        position: absolute;
+        bottom: 15%;
+        right: 33%;
+    }
+    &__emailInput::-moz-placeholder {
+        opacity: 1;
+    }
+    &__emailInput:focus {
+        color: $primary;
+        border: 0.1rem solid $primary;
+    }
+    &__about {
+        line-height: 2.6rem;
+    }
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__galleryItem {
+        width: calc(25% - 1rem);
+        margin: 0.5rem;
+    }
+}
+
+.navBar--flex {
+    border-top: 0.1rem solid $light;
+}
+
+@media (max-width: 1100px) {
+
+    .topFooter__item:nth-child(2) {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 730px) {
+
+    .topFooter {
+        &__sections {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 50%;
+        }
+        &__item:nth-child(2) {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 570px) {
+
+    .topFooter {
+        &__sections {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        &__item:nth-child(3) {
+            margin-top: 3rem;
+        }
+    }
+    
+}
