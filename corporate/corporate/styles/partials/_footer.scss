@@ -125,6 +125,9 @@ footer {
         &__item:nth-child(3) {
             margin-top: 3rem;
         }
+        &__inputContainer::after {
+            right: 20%;
+        }
     }
     
 }

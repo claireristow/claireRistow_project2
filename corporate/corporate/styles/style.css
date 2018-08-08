@@ -320,12 +320,13 @@ header {
     width: 100%; }
   .navBar__link {
     display: block;
-    width: 100%;
+    max-width: 100%;
     padding: 2rem 0;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
-    border-bottom: 0.1rem solid #1d1d1d; }
+    border-bottom: 0.1rem solid #1d1d1d;
+    margin: 0; }
   .navBar__link:hover {
     border-bottom: 0.1rem solid #1d1d1d; }
   .navBar__link:active {
@@ -450,7 +451,9 @@ footer {
     justify-content: center;
     text-align: center; }
   .topFooter__item:nth-child(3) {
-    margin-top: 3rem; } }
+    margin-top: 3rem; }
+  .topFooter__inputContainer::after {
+    right: 20%; } }
 
 html {
   font-size: 62.5%; }
